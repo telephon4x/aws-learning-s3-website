@@ -1,0 +1,16 @@
+# macOS system files
+.DS_Store
+
+# AWS CLI credentials (never commit these!)
+*.csv
+
+# Node or build folders (future-proofing)
+node_modules/
+dist/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
