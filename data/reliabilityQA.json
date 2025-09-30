@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Which AWS service provides DNS and traffic routing?",
+    "answer": "Amazon Route 53."
+  },
+  {
+    "question": "What is the primary benefit of Auto Scaling?",
+    "answer": "Automatically adjusts capacity to maintain performance and reliability."
+  },
+  {
+    "question": "Which database service is designed for high availability across multiple AZs?",
+    "answer": "Amazon RDS Multi-AZ deployments."
+  },
+  {
+    "question": "What AWS feature allows automatic failover between regions?",
+    "answer": "Amazon Route 53 with health checks and failover routing policy."
+  },
+  {
+    "question": "Which service monitors resource usage and triggers alarms?",
+    "answer": "Amazon CloudWatch."
+  }
+]

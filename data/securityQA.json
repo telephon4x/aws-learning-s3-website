@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is the AWS best practice for managing root user credentials?",
+    "answer": "Enable MFA, store root credentials securely, and avoid using them for daily tasks."
+  },
+  {
+    "question": "Which AWS service provides protection against DDoS attacks?",
+    "answer": "AWS Shield."
+  },
+  {
+    "question": "What is the AWS Shared Responsibility Model?",
+    "answer": "AWS manages security of the cloud; customers manage security in the cloud."
+  },
+  {
+    "question": "Which AWS service provides centralized logging for API calls?",
+    "answer": "AWS CloudTrail."
+  },
+  {
+    "question": "What feature of IAM enforces temporary credentials?",
+    "answer": "IAM Roles with short-lived session tokens."
+  }
+]

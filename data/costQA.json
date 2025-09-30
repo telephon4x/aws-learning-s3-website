@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Which AWS service provides recommendations for cost savings?",
+    "answer": "AWS Trusted Advisor."
+  },
+  {
+    "question": "What is the pricing advantage of using Reserved Instances?",
+    "answer": "Significant cost savings over On-Demand instances with long-term commitments."
+  },
+  {
+    "question": "Which storage class is best for infrequently accessed data?",
+    "answer": "Amazon S3 Glacier."
+  },
+  {
+    "question": "What feature lets you set spending limits for AWS accounts?",
+    "answer": "AWS Budgets."
+  },
+  {
+    "question": "Which service helps allocate and visualize AWS costs across departments?",
+    "answer": "AWS Cost Explorer."
+  }
+]

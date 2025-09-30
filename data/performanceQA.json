@@ -1,0 +1,22 @@
+[
+  {
+    "question": "Which AWS service helps distribute incoming application traffic across multiple targets?",
+    "answer": "Elastic Load Balancing (ELB)."
+  },
+  {
+    "question": "What is Amazon CloudFront used for?",
+    "answer": "Content Delivery Network (CDN) for faster delivery of content globally."
+  },
+  {
+    "question": "Which storage option is optimized for frequently accessed data?",
+    "answer": "Amazon S3 Standard."
+  },
+  {
+    "question": "What does Amazon ElastiCache improve?",
+    "answer": "Performance by caching frequently accessed data in memory."
+  },
+  {
+    "question": "Which AWS service offers serverless compute for running code?",
+    "answer": "AWS Lambda."
+  }
+]
