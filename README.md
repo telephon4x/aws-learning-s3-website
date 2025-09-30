@@ -1,26 +1,19 @@
 # AWS Learning S3 Website
 
-This is my first AWS practice project.  
-The goal is to create a simple static website hosted in an S3 bucket while learning the basics of AWS security and storage.  
-I will expand this project later to include more AWS services.
+This is my AWS practice project for studying the Solutions Architect Associate certification.  
+It demonstrates static website hosting on Amazon S3 with CloudFront distribution.
 
-## S3 Bucket Setup
+## Live Website
+Visit the site here:  
+👉 [AWS Learning Hub](https://d3mq77u0a0xpwj.cloudfront.net)
 
-- Created a new S3 bucket named `aws-learning-s3-website-telephon4x-001` in region `us-east-2`.
-- Uploaded `index.html` to the bucket using the AWS CLI.
-- Verified the file exists in the bucket with `aws s3 ls`.
-- Decided not to enable versioning to avoid additional costs.
+## Features
+- Static site hosted on Amazon S3
+- Global distribution using Amazon CloudFront
+- Basic HTML, CSS, and JavaScript
+- Organized as a personal AWS Study Resource Hub
 
-## Static Website Hosting
-
-- Enabled static website hosting for S3 bucket: `aws-learning-s3-website-telephon4x-001`
-- Index document: `index.html`
-- Website endpoint: http://aws-learning-s3-website-telephon4x-001.s3-website.us-east-2.amazonaws.com
-
-## CloudFront Distribution
-
-- Created a CloudFront distribution to serve the S3 static website globally.
-- Default cache behavior: GET, HEAD (static content only).
-- Viewer protocol policy: Redirect HTTP to HTTPS.
-- CloudFront domain: https://d3mq77u0a0xpwj.cloudfront.net
-- Benefit: Faster content delivery via edge locations and secure access over HTTPS.
+## Next Steps
+- Add custom domain with Route 53
+- Enable HTTPS with AWS Certificate Manager
+- Expand sections for more AWS services and exam topics
