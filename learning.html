@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AWS Flashcards</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="flashcards.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>AWS Flashcards</h1>
+    <p>Choose a domain and start practicing with flashcards.</p>
+  </header>
+
+  <nav class="nav-links">
+    <a href="index.html" class="nav-button">Home</a>
+    <a href="referral.html" class="nav-button">Referral Topics</a>
+    <a href="practice.html" class="nav-button">Practice Exams</a>
+  </nav>
+
+  <main>
+    <h2>Main Domains</h2>
+    <div class="domain-buttons">
+      <button onclick="loadFlashcards('security')" class="nav-button">Domain 1: Security</button>
+      <button onclick="loadFlashcards('reliability')" class="nav-button">Domain 2: Reliability</button>
+      <button onclick="loadFlashcards('performance')" class="nav-button">Domain 3: Performance</button>
+      <button onclick="loadFlashcards('cost')" class="nav-button">Domain 4: Cost Optimization</button>
+    </div>
+
+    <!-- Flashcard container -->
+    <section id="flashcard-container" class="flashcard-container">
+      <p class="placeholder">Select a domain to load flashcards.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AWS Study Hub</p>
+  </footer>
+</body>
+</html>
