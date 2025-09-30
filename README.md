@@ -16,3 +16,11 @@ I will expand this project later to include more AWS services.
 - Enabled static website hosting for S3 bucket: `aws-learning-s3-website-telephon4x-001`
 - Index document: `index.html`
 - Website endpoint: http://aws-learning-s3-website-telephon4x-001.s3-website.us-east-2.amazonaws.com
+
+## CloudFront Distribution
+
+- Created a CloudFront distribution to serve the S3 static website globally.
+- Default cache behavior: GET, HEAD (static content only).
+- Viewer protocol policy: Redirect HTTP to HTTPS.
+- CloudFront domain: https://d3mq77u0a0xpwj.cloudfront.net
+- Benefit: Faster content delivery via edge locations and secure access over HTTPS.
