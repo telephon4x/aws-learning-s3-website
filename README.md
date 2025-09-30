@@ -10,3 +10,9 @@ I will expand this project later to include more AWS services.
 - Uploaded `index.html` to the bucket using the AWS CLI.
 - Verified the file exists in the bucket with `aws s3 ls`.
 - Decided not to enable versioning to avoid additional costs.
+
+## Static Website Hosting
+
+- Enabled static website hosting for S3 bucket: `aws-learning-s3-website-telephon4x-001`
+- Index document: `index.html`
+- Website endpoint: http://aws-learning-s3-website-telephon4x-001.s3-website.us-east-2.amazonaws.com
