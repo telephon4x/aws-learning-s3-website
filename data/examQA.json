@@ -1,0 +1,2113 @@
+[
+  {
+    "id": 1,
+    "question": "An application requires access to files being generated from thousands of EC2 instances running within the same VPC. The application needs to easily read these generated files some which can be greater than 5 TB in size. What would be a convenient way to share the files across multiple EC2 instances as a common store?",
+    "choices": [
+      {
+        "text": "Amazon S3",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon EBS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Storage Gateway",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon EFS",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Amazon Elastic File System (Amazon EFS)"
+  },
+  {
+    "id": 2,
+    "question": "A Solutions Architect is designing a cost-effective storage solution to archive rarely accessed financial documents. These documents must occasionally be retrieved for auditing purposes, with a retrieval time requirement of 3 to 5 hours.\n\nWhich Amazon S3 Glacier retrieval option is the most suitable for this scenario?",
+    "choices": [
+      {
+        "text": "Expedited retrieval",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Accelerated retrieval",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Bulk retrieval",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Standard retrieval",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 3,
+    "question": "A company needs to retain sensitive documents for 7 years to comply with audit requirements. These documents are stored in Amazon S3 Glacier for its cost-effectiveness and high resiliency. Since audits can occur without notice, the company must be able to retrieve these documents within minutes.\n\nWhich retrieval option is the most appropriate for their needs?",
+    "choices": [
+      {
+        "text": "Standard retrieval",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Bulk retrieval",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Accelerated retrieval",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Expedited retrieval",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 4,
+    "question": "A company is running a two-tier application with a web application layer hosted on a single EC2 instance and a database layer using an RDS MySQL instance. From a security standpoint, which subnets should each layer be launched in?",
+    "choices": [
+      {
+        "text": "Private subnet for the web application layer, private subnet for the database layer",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Public subnet for the web application layer, public subnet for the database layer",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Public subnet for the database layer, private subnet for the web application layer",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Public subnet for the web application layer, private subnet for the database layer",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Scenario 2: VPC with Public and Private Subnets (NAT): https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Scenario2.html"
+  },
+  {
+    "id": 5,
+    "question": "A developer is building an automated transcription service where Amazon EC2 instances process audio files and convert them into text files. Both files need to be securely stored together until the text file is retrieved. The developer is unsure about the required storage capacity.\n\nWhich storage solution is the most cost-efficient and scalable for this use case?",
+    "choices": [
+      {
+        "text": "Multiple instance stores",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "A single Amazon Glacier Vault",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Multiple Amazon EBS volume with snapshots",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "A single Amazon S3 bucket",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 6,
+    "question": "A company needs to ensure its production application remains highly available and fault-tolerant. The application needs 6 instances running at any given time to stay operational and cannot afford downtime. The application operations in us-east-2 (Ohio) which only has 3 Availability Zones. How many EC2 instances do they need within each AZ to ensure the resiliency of their application in the case of single AZ failure?",
+    "choices": [
+      {
+        "text": "Create an Auto Scaling Group configured to run in all AZs. Set Min Capacity Setting to 9",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "3 Instances in us-east-2a, 3 in us-east-2b, and 3 in us-east-2c",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "6 Instances in us-east-2a, and 6 in us-east-2b.",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "3 Instances in us-east-2a, 3 in us-east-2b",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Create an Auto Scaling Group configured to run in all AZs. Set Min Capacity Setting to 6",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "2 Instances in us-east-2a, 2 in us-east-2b, and 2 in us-east-2c",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Regions and Availability Zones: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html"
+  },
+  {
+    "id": 7,
+    "question": "A web application running on EC2 instances managed by an Auto Scaling Group and placed behind an Application Load Balancer generates thousands of PDFs weekly and stores them in Amazon S3. Each PDF requires associated metadata (~20 KB per file), which must be retrievable and displayed as a flat list within the web application.\n\nWhich of the following storage solutions would be the most performant and scalable for storing and displaying this metadata?",
+    "choices": [
+      {
+        "text": "Store the metadata in Amazon RDS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Attach metadata as S3 object tags",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Store the metadata on the EC2 root EBS volume",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Store the metadata in Amazon DynamoDB",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 8,
+    "question": "Which of the following payment options are associated with Reserved Instances? (Choose 3)",
+    "choices": [
+      {
+        "text": "All Upfront",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "No Upfront",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Partial Upfront",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Annual Upfront",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Monthly Upfront",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Payment option: You can choose between three payment options: All Upfront, Partial Upfront, and No Upfront. If you choose the Partial or No Upfront payment option, the remaining balance will be due in monthly increments over the term.\n\nAmazon EC2 Reserved Instances allow you to reserve Amazon EC2 computing capacity for 1 or 3 years, in exchange for a significant discount (up to 75%) compared to On-Demand instance pricing.\n\nhttps://aws.amazon.com/ec2/pricing/reserved-instances/"
+  },
+  {
+    "id": 9,
+    "question": "A company runs containerized applications that include both critical and non-critical batch workloads. The critical workloads must maintain high availability at all times, while the non-critical workloads are time-flexible and can tolerate interruptions. To reduce infrastructure costs, the company is willing to make 1- or 3-year commitments for predictable workloads and use flexible pricing options for non-critical workloads.\n\nWhich approach best meets these requirements?",
+    "choices": [
+      {
+        "text": "Use Amazon ECS with only Reserved Instances; Spot Instances are not supported on ECS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use AWS Fargate with Fargate Spot for non-critical workloads and Fargate Standard for critical workloads",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use AWS Lambda with Reserved and Spot Instances",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon ECS on EC2 with Reserved Instances for critical workloads and Spot Instances for non-critical workloads",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 10,
+    "question": "Which two AWS services are best suited to help you integrate third-party payment solutions and monetize your applications in a cost-effective and scalable way?",
+    "choices": [
+      {
+        "text": "AWS Cost Explorer",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS Marketplace",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Pay",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon SNS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 11,
+    "question": "An AWS Lamba function needs to access S3 in order to process photos into thumbnails. How can you securely pass credentials to the AWS Lambda?",
+    "choices": [
+      {
+        "text": "Place the Access Key and Secret into Lambda function. It is not possible to assign roles or environment variables to AWS Lambda functions. So you must hard code the credentials",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Pass the Access Key and Secret into environment variables within the AWS Lambda console. This will keep the credentials out of the code and secure.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use AWS Secrets Manager to store the Access Key and Secret",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Assign an IAM role to the AWS Lambda with permission to S3",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "IAM Roles: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html"
+  },
+  {
+    "id": 12,
+    "question": "The website www.exampro.co is a popular photo and video hosting service with millions of users.\n\nWhich AWS storage solution is best for storing large data objects while lowering costs, scaling to meet demand, and enabling faster innovation?",
+    "choices": [
+      {
+        "text": "Amazon S3 Glacier",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Elastic File System (EFS)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS Redshift",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon S3 Standard",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 13,
+    "question": "A company wants to back up its on-premises storage volumes to AWS in a way that ensures automated, efficient transfers while being cost-effective. Which AWS solution best meets these requirements?",
+    "choices": [
+      {
+        "text": "Set up AWS Direct Connect to establish a dedicated connection and manually create Amazon EBS snapshots of on-premises volumes.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use AWS Storage Gateway (Stored Volume Gateway) to continuously back up local storage to Amazon S3 as EBS snapshots.",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Use AWS Site-to-Site VPN to connect on-premises storage to AWS and manually create Amazon EBS snapshots.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use AWS DataSync to transfer on-premises volume backups to Amazon S3.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 14,
+    "question": "Which IAM policy condition key should be used to ensure that all AWS API requests are made over a secure HTTPS (SSL/TLS) connection?",
+    "choices": [
+      {
+        "text": "aws:SourceIp",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "aws:SecureSSL",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "aws:UserRequests",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "aws:SecureTransport",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 15,
+    "question": "In an Amazon VPC, Network Access Control Lists (ACLs) function as a firewall to control inbound and outbound traffic. At which level do ACLs apply within the VPC?",
+    "choices": [
+      {
+        "text": "API Gateway",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Private",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EC2 instance",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Subnet",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 16,
+    "question": "A Solutions Architect is designing an application that requires a relational database running on an Amazon EC2 instance. The database is 100 GB in size and is accessed infrequently, approximately once or twice per day. The architect wants to choose the most cost-effective Amazon EBS volume type while ensuring adequate performance for the database workload.\n\nWhich EBS volume type should be selected?",
+    "choices": [
+      {
+        "text": "Throughput Optimized HDD (st1)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Provisioned IOPS SSD (io2)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "General Purpose SSD (gp3)",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Cold HDD (sc1)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 17,
+    "question": "A serverless application consists of multiple AWS Lambda functions invoked by API Gateway endpoints. A user needs to investigate the failure of specific Lambda functions.\n\nWhich AWS services can provide visibility into the causes of these failures? (Select 2)",
+    "choices": [
+      {
+        "text": "Amazon Inspector",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS X-Ray",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon CloudWatch Logs",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "AWS CloudTrail",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS Config",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 18,
+    "question": "A cloud engineer needs to use Amazon CloudFront to distribute content and must create a distribution by specifying configuration settings.\n\nWhich of the following settings should be specified during the setup?",
+    "choices": [
+      {
+        "text": "Specify the number of objects you can serve per distribution",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Configure the environment variables",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Specify whether access to the files is public or restricted to specific users",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Specify your origin, such as an Amazon S3 bucket or an HTTP server",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 19,
+    "question": "A company is migrating a three-tier web application to AWS. Due to software licensing requirements, the company must have full control over instance placement and visibility into the underlying physical hardware, including CPU sockets, cores, and host IDs.\n\nWhich Amazon EC2 compute model should the company use to meet these requirements?",
+    "choices": [
+      {
+        "text": "EC2 Spot Instances",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EC2 Reserved Instances",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EC2 Placement Groups",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EC2 Dedicated Hosts",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 20,
+    "question": "A web application running on a single EC2 instance with an Elastic IP (EIP) is accessed by employees from remote locations. The company wants to audit the inbound IP addresses to ensure they are from approved company IP ranges. Which AWS service can be used for this purpose?",
+    "choices": [
+      {
+        "text": "CloudWatch Logs",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EC2 Metadata",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "CloudTrail",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "VPC Flow Logs",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 21,
+    "question": "A web application requires frequent high-throughput data reads from an Amazon S3 bucket. What configuration change should you make to maximize the read performance of the S3 bucket?",
+    "choices": [
+      {
+        "text": "Enable Amazon S3 Transfer Acceleration.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Organize object keys with hashed prefixes to evenly distribute load across partitions.",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Use the Amazon S3 Intelligent-Tiering storage class.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "No changes are necessary.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 22,
+    "question": "A company has a web application and wants to capture real-time clickstream data from user activities for subsequent analysis. Which AWS service is most suitable for collecting and streaming this data in real-time?",
+    "choices": [
+      {
+        "text": "Amazon Kinesis Data Analytics",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Kinesis Data Firehose",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon MSK (Managed Streaming for Apache Kafka)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Kinesis Data Streams",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Amazon Kinesis Data Streams: https://aws.amazon.com/kinesis/data-streams/\n\nStreaming Data: https://aws.amazon.com/streaming-data/"
+  },
+  {
+    "id": 23,
+    "question": "A company has a requirement that prevents them from using Amazon DocumentDB, so they must provision an EC2 instance with MongoDB. The database requires a maximum of 10,000 IOPS. Which EBS volume type should they use to meet this requirement?",
+    "choices": [
+      {
+        "text": "EBS Provisioned IOPS SSD",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EBS Throughput Optimized HDD",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EBS Cold HDD",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EBS General Purpose SSD",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 24,
+    "question": "A company needs to provide thousands of remote employees with a storage solution to back up files. The files are not accessed frequently, but when needed, they must be retrieved immediately. What is the most cost-effective storage option?",
+    "choices": [
+      {
+        "text": "Amazon S3 Glacier with Expedited Retrievals",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon S3 Standard-Infrequent Access (S3 Standard-IA)",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon EBS Cold HDD (sc1)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon S3 Standard",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 25,
+    "question": "A company is running a High-Performance Computing (HPC) application that requires the lowest possible latency between multiple Amazon EC2 instances.\n\nWhich type of EC2 Placement Group is best suited for this requirement?",
+    "choices": [
+      {
+        "text": "Partition Placement",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Spread Placement",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Cluster Placement",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Packed Placement",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Performance Placement",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 26,
+    "question": "A company has an application running on an EC2 instance behind an Elastic Load Balancer. Whenever a user signs up, the product manager wants to receive an email notification.\n\nWhich solution would best meet this requirement?",
+    "choices": [
+      {
+        "text": "Use the AWS SDK to trigger a Lambda function, which publishes an event to an SNS topic. Subscribe to the SNS topic to receive the email",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use the AWS SDK to push a message onto an SQS queue. Have SES pull the queue to send the email",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use the AWS SDK to trigger a Lambda function, which pushes a message onto an SQS queue. Have SES pull the queue to send the email",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use the AWS SDK to publish the event to an SNS topic. Subscribe to the SNS topic to receive the email",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 27,
+    "question": "A web-application running on an EC2 instance generates multiples pdfs which then need to be publically served. Currently, these files reside on the EBS Volume and are served via the web-application. These pdfs are downloading files quite frequently which are slowing down the application, as well as users from other regions of the world, are complaining about slow download speeds. What could be done to address these performance issues?",
+    "choices": [
+      {
+        "text": "Store the PDF files as a BLOB in the database",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Cache the PDFs on ElastiCache",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Store and Serve the S3 files in an S3 Bucket with Public Access",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Cache the PDFs on CloudFront",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "What Is Amazon CloudFront?"
+  },
+  {
+    "id": 28,
+    "question": "When mapping an Amazon Elastic Block Store (EBS) volume to an Amazon EC2 instance in an AWS CloudFormation template, what should you reference to establish the correct relationship between the two resources?",
+    "choices": [
+      {
+        "text": "The physical ID of the EC2 instance",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "The logical ID of the EC2 instance only",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "The physical IDs of both the EBS volume and the EC2 instance",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "The logical IDs of both the EBS volume and the EC2 instance",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 29,
+    "question": "A company is using DynamoDB as its primary production database. The company's security policy requires that all data be encrypted at rest. How can DynamoDB data be encrypted?",
+    "choices": [
+      {
+        "text": "Turn on Enhanced VPC Routing",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Customer Managed Keys with AWS KMS",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Use the AWS managed Customer Master Key",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Turn on DynamoDB Accelerated Encryption (DAX)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use the IAM Password Policy",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 30,
+    "question": "An application is running within a private subnet of an Amazon VPC and needs to establish an outbound connection to the internet to fetch package updates. The private subnet is using IPv4. Which solution will allow the instance in the private subnet to connect to the internet?",
+    "choices": [
+      {
+        "text": "Create a VPN connection by launching a Virtual Private Gateway (VPG) in the public subnet and a Customer Gateway in the private subnet. Create a route in the private subnet's route table for 0.0.0.0/0 pointing to the VPG.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Create an Internet Gateway (IGW) and create a route in the private subnet's route table for 0.0.0.0/0 pointing to the IGW.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Add an outbound ALLOW rule to both the NACL and Security Group for 0.0.0.0/0 to allow internet access for the application.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Launch a NAT Gateway in a public subnet and create a route in the private subnet's route table for 0.0.0.0/0 pointing to the NAT Gateway.",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Route Tables"
+  },
+  {
+    "id": 31,
+    "question": "A company security policy requires that all EBS Volumes are encrypted-at-rest. Which AWS service would help meet this requirement?",
+    "choices": [
+      {
+        "text": "Server-Side Encryption AES-256",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS Certificate Manager",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon GuardDuty",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS KMS",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "What is AWS Key Management Service?"
+  },
+  {
+    "id": 32,
+    "question": "An application has multiple EC2 instances within an Auto Scaling Group (ASG). The ASG also has a simple scaling policy to meet the demand for fluctuating traffic. The application is scaling up and down repeatedly within the timeframe of an hour. What configuration changes could be made to reduce the cost and the frequency of scaling?",
+    "choices": [
+      {
+        "text": "Reduce the Max Capacity",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Increase the Cooldown timer",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Increase the alarm period that triggers the scale down policy",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Reduce the Desired Capacity",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Add Scheduled Scaling Actions",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Scaling Cooldowns for Amazon EC2 Auto Scaling\n\nDynamic Scaling for Amazon EC2 Auto Scaling"
+  },
+  {
+    "id": 33,
+    "question": "A company is migrating an on-premises Cassandra database with a large workload to AWS. They plan to host the database on an EC2 instance. Which EBS volume type would provide the best performance for this use case?",
+    "choices": [
+      {
+        "text": "EBS Throughput Optimized HDD",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EBS General Purpose SSD",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EBS Cold HDD",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EBS Provisioned IOPS SSD",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Amazon EBS Volume Types"
+  },
+  {
+    "id": 34,
+    "question": "A software development team needs to restructure their SaaS solution's application layer to ensure it can automatically scale to meet varying request volumes. They have decided to adopt a serverless architecture.\n\nWhich AWS services would best meet their requirements?",
+    "choices": [
+      {
+        "text": "Amazon DynamoDB and AWS Code Deploy",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Cognito and Amazon DynamoDB",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Elastic Beanstalk and an Application Load Balancer",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon API Gateway and AWS Lambda",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 35,
+    "question": "A company needs to perform long and complex queries on petabytes of data to generate Business Intelligence (BI) reports. Which AWS service would best meet these performance requirements?",
+    "choices": [
+      {
+        "text": "Amazon ElastiCache",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 36,
+    "question": "A company needs to securely store application logs generated by a security application that monitors their production environment. The logs will be stored in Amazon S3 and must be protected from being deleted, even if an unauthorized actor gains access to the AWS account.\n\nWhich of the following actions can the company take to ensure the logs cannot be easily deleted? (Select all that apply)",
+    "choices": [
+      {
+        "text": "Implement an S3 Bucket Policy to deny delete actions",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Enable MFA Delete for the S3 bucket",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Enable versioning on the S3 bucket",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Enable cross-region replication for the bucket",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Enable S3 Object Lock with governance or compliance mode",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 37,
+    "question": "A Solutions Architect is designing a disaster recovery plan for a company's production web application. The application uses an RDS database that is automatically backed up with cross-region snapshot replication. The architecture includes an Application Load Balancer and an Auto Scaling Group. The disaster recovery plan must be cost-effective and allow the infrastructure to be replicated in another region during a regional failure.\n\nWhat is the best solution?",
+    "choices": [
+      {
+        "text": "Create an exact duplicate of the infrastructure in another region with the RDS snapshot restored regularly. No cost-effective solution can avoid downtime",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Create a duplicate of the infrastructure in another region. Set the Auto Scaling Group's minimum capacity to 0 instances, and increase it to production requirements when needed. Restore the RDS snapshot",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Duplicate the infrastructure in Elastic Beanstalk in another region. Restore the RDS snapshot",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Create a CloudFormation template defining all the AWS resources. Launch the template in another region when needed, and restore the RDS snapshot",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 38,
+    "question": "A company operates a popular web application hosted behind an Auto Scaling Group. The application experiences rapid, unpredictable traffic growth during the summer, with traffic doubling each year. The company needs to implement a solution to ensure the application can meet the performance demands. What configuration change to the Auto Scaling Group will best address this requirement?",
+    "choices": [
+      {
+        "text": "Use step scaling",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use simple scaling",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use scheduled actions",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use a target tracking scaling policy",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Scheduled Scaling for Amazon EC2 Auto Scaling\n\nTarget Tracking Scaling Policies for Amazon EC2 Auto Scaling\n\nAggregating Statistics Across Resources"
+  },
+  {
+    "id": 39,
+    "question": "A Solutions Architect needs to choose an Amazon Elastic Block Store (EBS) volume type that can sustain a continuous write throughput of 500 MiB/s for processing large datasets in a high-throughput environment.\n\nWhich EBS volume type best meets this requirement?",
+    "choices": [
+      {
+        "text": "Throughput Optimized HDD (st1)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Provisioned IOPS SSD (io2)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Cold HDD (sc1)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "General Purpose SSD (gp3)",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 40,
+    "question": "A Solutions Architect needs to select a database that can perform joins between multiple tables and leverage an open-source database engine. Which AWS database solution is best suited for this use case?",
+    "choices": [
+      {
+        "text": "Amazon Aurora",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Redshift",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon RDS",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 41,
+    "question": "An application uses Amazon DynamoDB with provisioned throughput set to 100 write capacity units (WCUs). During peak hours, write traffic increases to 500 writes per second, causing throttling and dropped writes.\n\nWhat is the most cost-effective solution to handle this temporary spike in write traffic without over-provisioning capacity during off-peak hours?",
+    "choices": [
+      {
+        "text": "Enable Auto Scaling on DynamoDB to adjust provisioned capacity",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon Kinesis Data Streams to buffer writes for downstream processing",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Switch DynamoDB to On-Demand capacity mode",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon SQS to queue writes and process them at a steady rate",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 42,
+    "question": "As a Solutions Architect, you are building a CloudFormation template to provision a highly available architecture. After the stack is created, you need a convenient way to retrieve the DNS hostname of the load balancer.\n\nWhich template section should you use to provide this information after stack creation?",
+    "choices": [
+      {
+        "text": "Parameters",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Resources",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Outputs",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Mappings",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Variables",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 43,
+    "question": "A company hosts an internal website using Amazon S3 Static Website Hosting with a CloudFront distribution configured to restrict access to authenticated users. However, the S3 website URL is still publicly accessible, allowing unauthorized users to access the content.\n\nHow can you enforce access only through CloudFront? (Select 2)",
+    "choices": [
+      {
+        "text": "Block all public access",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Update the bucket policy to ensure public access is not granted",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Create an Origin Access Identity (OAI)",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Turn on versioning",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use S3 pre-signed URLs",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 44,
+    "question": "A company operates multiple AWS accounts with resources across various regions. The company needs an audit trail of all services accessed via the AWS API. How can AWS CloudTrail be configured to meet these requirements?",
+    "choices": [
+      {
+        "text": "Logging across accounts is not possible. Create a trail in each AWS account, enable logging across all regions, and deliver logs to a bucket in the master account to centralize logs",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Do not create a trail in the master account for security reasons. Instead, use another account to create a single trail, enable logging for all AWS accounts in the Organization, and log all regions",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Logging must be turned on per region and AWS account. Enable AWS Config in each account, which will automatically create a trail for each region",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Create a single trail in the master account, enable logging for all AWS accounts in the Organization, and log all regions",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 45,
+    "question": "A company has an application running on an EC2 instance that allows users to upload and manage documents. Users frequently upload updated versions of their documents with the same file name, and the company wants to enable users to roll back to previous versions of their documents when needed.\n\nWhich AWS storage solution is the most suitable for this use case?",
+    "choices": [
+      {
+        "text": "Amazon EFS (Elastic File System)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon EBS (Elastic Block Store)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS Elastic Beanstalk",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon S3",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 46,
+    "question": "An application running on an EC2 instance, managed by an Auto Scaling Group and backed by an RDS PostgreSQL database, is gaining popularity. The database cannot handle the growing number of queries. What solution would improve the performance of this architecture?",
+    "choices": [
+      {
+        "text": "Use an Application Load Balancer in front of the web application",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon CloudFront in front of the web application",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon ElastiCache in front of the web application",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon ElastiCache in front of the database",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 47,
+    "question": "A company needs to automate the creation and management of AWS resources to consistently deploy their production web application environment. Which AWS service is best suited for implementing infrastructure as code (IaC)?",
+    "choices": [
+      {
+        "text": "AWS CodeBuild",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS Elastic Beanstalk",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS Systems Manager",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "AWS CloudFormation",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 48,
+    "question": "A company operates a Redshift cluster and needs to securely import petabytes of sensitive financial data from Amazon S3. Both S3 and Redshift are located in the same AWS region. What are the best practices to securely transfer the data from S3 to Redshift?",
+    "choices": [
+      {
+        "text": "Use AWS Snowball to physically transfer the data to Redshift.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Enable Amazon Redshift Enhanced VPC Routing to route traffic through the VPC.",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Set up a VPC Gateway Endpoint for S3 to ensure secure data transfer.",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Configure a VPC Interface Endpoint for S3 to ensure secure access.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Enable AWS Key Management Service (KMS) for encryption on both S3 and Redshift.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 49,
+    "question": "A company has developed a containerized application hosted on AWS Elastic Container Service (ECS) within a single cluster. The application is used by multiple customers for data analysis, and it is critical to ensure that each customer’s container is isolated to maintain privacy.\n\nWhat is the best approach to achieve this isolation in ECS?",
+    "choices": [
+      {
+        "text": "Use Security Groups between containers",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use IAM roles for ECS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use IAM roles for services",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use IAM roles for tasks",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 50,
+    "question": "A marketing company needs to use a NoSQL database for its application. The IT department prefers a fully managed service to avoid managing database servers.\n\nWhich AWS service provides a fully managed and highly available NoSQL solution?",
+    "choices": [
+      {
+        "text": "Amazon RDS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Aurora",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Simple DB",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon DynamoDB",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 51,
+    "question": "A Solution Architect needs to investigate which database solution would be the best fit for a new web application. The data being stored must remain highly available by default. Access to this data should have a guarantee of reads at any scale and the data being stored JSON like data. Which database solution would meet their needs?",
+    "choices": [
+      {
+        "text": "Amazon Redshift",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "DocumentDB",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "DynamoDB",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "RDS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Aurora",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html"
+  },
+  {
+    "id": 52,
+    "question": "A Solutions Architect is designing a solution for several critical long-running applications hosted on Docker. The solution must address scalability and container orchestration requirements. Which AWS service or combination of services should the architect use?",
+    "choices": [
+      {
+        "text": "Use Amazon Lightsail containers for orchestration",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Spot Instances to orchestrate and scale containers on existing Amazon EC2 instances.",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Auto Scaling groups to launch containers on existing Amazon EC2 instances",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon ECS and Service Auto Scaling",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 53,
+    "question": "A company has thousands of applications generating JSON logs that need to be delivered to Amazon S3 for analysis in Athena. The logs must be archived, encrypted, and converted to Parquet format. Logs are sent every minute, and the company requires near-real-time processing for analysis.\n\nWhat is the best solution to prepare the log files?",
+    "choices": [
+      {
+        "text": "Use Amazon Kinesis Data Streams",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon SQS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon Kinesis Data Firehose",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon CloudWatch Logs",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use AWS Glue",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 54,
+    "question": "A company runs an application in us-east-1a with an attached Amazon EBS volume. To minimize costs, the company operates in a single Availability Zone (AZ) and is not concerned with downtime. However, in the event of an Availability Zone failure, they need to recover the volume and launch a new instance in a different AZ within the same AWS Region (e.g., us-east-1b).\n\nWhich of the following is the best way to ensure the company can recover from such a failure?",
+    "choices": [
+      {
+        "text": "Regularly create EBS snapshots and copy them to another AWS Region",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Regularly create EBS snapshots and manually restore them in another AZ when needed",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Use Amazon EFS instead of EBS for storage",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Regularly create EBS snapshots",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 55,
+    "question": "A company stores customer data in an Amazon S3 bucket. The company needs to periodically deliver a copy of this data to the customer’s AWS account.\n\nHow can this be achieved effectively?",
+    "choices": [
+      {
+        "text": "Create an S3 Snapshot and make it public",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Create a bucket for the customer, enable Cross-Region Replication, and set up a cross-account role so the customer can access the replicated bucket",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Use AWS Snowball to transport the contents of the bucket to the customer’s AWS account",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Enable Cross-Region Replication with the destination bucket in the customer's S3 bucket",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 56,
+    "question": "A Solution Architect is tasked with designing a web application running behind an Application Load Balancer (ALB). The web application needs to access objects from S3 without exposing said objects from S3 directly to the Internet. Which solution would meet these requirements?",
+    "choices": [
+      {
+        "text": "Apply an ACM SSL Certificate to the Application Load Balancer",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Server-Side Encryption on the S3 Bucket",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Turn off the Internet Gateway to the S3 Bucket",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use a VPC Endpoint",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 57,
+    "question": "A company has documents which it must frequently access that will remain highly available and after 30 days the files can be deleted. Which storage solution will meet those needs?",
+    "choices": [
+      {
+        "text": "Glacier",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EBS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "EFS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "S3",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Object Lifecycle Management: https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html"
+  },
+  {
+    "id": 58,
+    "question": "A company has an on-premise MySQL database. The database in question is 15TB in size and is likely double within two calendar quarters. Due to the size of the database replicas are required. Replication lag should be in the milliseconds to guarantee excellent performance. Which RDS engine will be meet these performance requirements?",
+    "choices": [
+      {
+        "text": "Microsoft SQL Server",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "MySQL",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Maria DB",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Aurora",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": "Amazon Aurora DB Clusters"
+  },
+  {
+    "id": 59,
+    "question": "A company has created a CloudTrail log to track API calls to AWS services across all regions within an AWS account and the logs are to be delivered to an S3 bucket. A security policy requires these logs to be encrypted at rest.\n\nHow can this be achieved?",
+    "choices": [
+      {
+        "text": "Enable SSE-S3",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Enable SSE-KMS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Enable SSE-AES",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "The logs will be encrypted by default",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 60,
+    "question": "An application running on an EC2 instance has a scoreboard. The top ten scores rarely change but have high reads. The scores after the top change more frequently and are not as read as often. It is important that the time to read and write has a guarantee of speed. Which two AWS services would meet these performance requirements?",
+    "choices": [
+      {
+        "text": "RDS",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "DynamoDB",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "ElastiCache",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "Redshift",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon Macie",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 61,
+    "question": "Which of the following services are specifically designed for caching on AWS?",
+    "choices": [
+      {
+        "text": "EC2",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "ElastiCache",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "CloudFront",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      },
+      {
+        "text": "AWS Cachezilla",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "CacheDeploy",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 62,
+    "question": "A web application generates approximately 100 background jobs per second that must be processed individually (i.e., without batching). You need to design a solution where another EC2 instance can process each job request in near real-time.\n\nWhich AWS service is most appropriate to integrate the two components and handle this level of throughput?",
+    "choices": [
+      {
+        "text": "Amazon SNS (Simple Notification Service)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon SQS FIFO Queue",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Auto Scaling Group (ASG)",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Amazon SQS Standard Queue",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 63,
+    "question": "A company operates a web application that allows users to create dating profiles. Users can upload a main profile photo, which they frequently update, and sometimes revert to an older photo.\n\nWhat solution would ensure that previous photos are not lost and can be easily recovered?",
+    "choices": [
+      {
+        "text": "S3 with Cross-Region Replication",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "S3 with a Bucket Policy",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "S3 with Transfer Acceleration",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "S3 with Versioning enabled",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 64,
+    "question": "A company has a web application running in a single AWS region to remain cost-effective. They do not have standby servers in another region but want to ensure that, in case of a regional failure, users are informed about the interruption of service rather than encountering an unresponsive website.\n\nWhat solution can they implement?",
+    "choices": [
+      {
+        "text": "Route 53 failover policy cannot failover to S3 Static Website Hosting. Instead, use Route 53 Health Check to trigger a CloudWatch Alarm, which triggers a Lambda function to send emails via SES notifying users of downtime",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Route 53 failover policy cannot failover to S3 Static Website Hosting. Instead, use Route 53 Health Check to trigger a CloudWatch Alarm, which in turn triggers an EC2 instance action to launch an instance in another region running a static website",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Route 53 failover policy cannot failover to S3 Static Website Hosting unless it is in front of a CloudFront distribution",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "Use Route 53 to failover to a website hosted on S3 Static Website Hosting in another region",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  },
+  {
+    "id": 65,
+    "question": "An e-commerce app runs exactly eight m5.large EC2 instances behind an Application Load Balancer (ALB) in us-east-1. The system must remain available if one Availability Zone (AZ) fails. The company wants to minimize costs and keep an even distribution of instances across AZs.\n\nWhich deployment best meets these requirements?",
+    "choices": [
+      {
+        "text": "4 AZs with 2 instances in each AZ",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "3 AZs with 4 instances in each AZ",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "3 AZs with 3, 3, and 2 instances",
+        "correct": false,
+        "incorrect": true,
+        "explanation": ""
+      },
+      {
+        "text": "2 AZs with 4 instances in each AZ",
+        "correct": true,
+        "incorrect": false,
+        "explanation": ""
+      }
+    ],
+    "explanation": ""
+  }
+]

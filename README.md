@@ -1,19 +1,27 @@
 # AWS Learning S3 Website
 
-This is my AWS practice project for studying the Solutions Architect Associate certification.  
-It demonstrates static website hosting on Amazon S3 with CloudFront distribution.
+This is my AWS practice project for studying the **Solutions Architect Associate** certification.  
+It demonstrates static website hosting on **Amazon S3** with global distribution through **Amazon CloudFront**.
+
+---
 
 ## Live Website
-Visit the site here:  
-👉 [AWS Learning Hub](https://d3mq77u0a0xpwj.cloudfront.net)
+Visit the deployed site here:  
+[**AWS Learning Hub**](https://d3mq77u0a0xpwJ.cloudfront.net/)
+
+---
 
 ## Features
 - Static site hosted on Amazon S3
-- Global distribution using Amazon CloudFront
-- Basic HTML, CSS, and JavaScript
-- Organized as a personal AWS Study Resource Hub
+- Global content distribution with Amazon CloudFront
+- Organized as a personal **AWS Study Resource Hub**
+- Clean, responsive design using HTML, CSS, and JavaScript
+- **Referral Topics** page with quick-access AWS documentation links
+- **Learning (Flashcards)** section pulling JSON-based Q&A by exam domain
+- **Practice Exams** page (structure in place, content to come)
+- Deployment automated with a custom `deploy.sh` script
+- GitHub integrated for version control and change tracking
 
-## Next Steps
-- Add custom domain with Route 53
-- Enable HTTPS with AWS Certificate Manager
-- Expand sections for more AWS services and exam topics
+---
+
+## Project Structure

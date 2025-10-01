@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AWS Practice Exam</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="exam.js"></script>
+</head>
+<body>
+  <header>
+    <h1>AWS Practice Exam</h1>
+    <p>Select timed or untimed mode to begin your exam.</p>
+  </header>
+
+  <nav class="nav-links">
+    <a href="index.html" class="nav-button">Home</a>
+    <a href="referral.html" class="nav-button">Referral Topics</a>
+    <a href="learning.html" class="nav-button">Flashcards</a>
+  </nav>
+
+  <main>
+    <h2>Exam Modes</h2>
+    <div class="exam-options">
+      <button class="nav-button" onclick="startExam(false)">Start Untimed Exam</button>
+      <button class="nav-button" onclick="startExam(true)">Start Timed Exam</button>
+    </div>
+
+    <div id="exam-timer" class="timer" style="display:none;"></div>
+
+    <div class="exam-container">
+      <!-- Populated by exam.js -->
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AWS Study Hub</p>
+  </footer>
+</body>
+</html>
