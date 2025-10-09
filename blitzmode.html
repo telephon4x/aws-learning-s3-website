@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AWS Study Hub — Blitz Mode</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Blitz Mode</h1>
+    <p>10 randomized questions from all domains. Fast reps, high focus.</p>
+  </header>
+
+  <nav class="nav-links">
+    <a href="index.html" class="nav-button">Home</a>
+    <a href="referral.html" class="nav-button">Referral Topics</a>
+    <a href="learning.html" class="nav-button">Flashcards</a>
+    <a href="practice.html" class="nav-button">Full Practice Exam</a>
+  </nav>
+
+  <main>
+    <div id="blitz-root" style="max-width: 950px; margin: 0 auto;">
+      <div class="card" style="text-align:left;">
+        <h3 style="margin-top:0;">Ready to start?</h3>
+        <p>Click start to load 10 random questions from <code>data/examQA.json</code>.</p>
+        <div style="display:flex; gap:10px; margin-top:12px;">
+          <button id="start-blitz" class="nav-button">Start Blitz</button>
+          <a href="practice.html" class="nav-button" style="background:#5b6b80;">Switch to Full Exam</a>
+        </div>
+      </div>
+
+      <div id="blitz-counter" class="card-counter" style="display:none;"></div>
+
+      <div id="blitz-question" class="card" style="display:none; text-align:left;">
+        <div id="q-text" style="font-weight:600; margin-bottom:10px;"></div>
+        <form id="q-options" style="display:grid; gap:10px;"></form>
+        <div id="q-feedback" style="margin-top:12px; display:none;"></div>
+        <div id="q-expl" style="margin-top:8px; color:#333; display:none;"></div>
+      </div>
+
+      <div id="blitz-controls" class="flashcard-nav" style="display:none;">
+        <button id="prev-q" class="nav-button" style="background:#5b6b80;">Prev</button>
+        <button id="reveal" class="nav-button">Reveal</button>
+        <button id="next-q" class="nav-button">Next</button>
+      </div>
+
+      <div id="blitz-summary" class="card" style="display:none; text-align:left;">
+        <h3 style="margin-top:0;">Blitz Summary</h3>
+        <p id="summary-line"></p>
+        <div style="display:flex; gap:10px; margin-top:10px;">
+          <button id="restart" class="nav-button">Restart Blitz</button>
+          <a href="practice.html" class="nav-button" style="background:#5b6b80;">Full Exam</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AWS Study Hub</p>
+  </footer>
+
+  <script src="blitz.js"></script>
+</body>
+</html>
